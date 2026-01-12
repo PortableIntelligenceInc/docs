@@ -1,0 +1,59 @@
+---
+title: 'Plant OpenAPI'
+description: 'Learn about the Plant Store OpenAPI specification'
+---
+
+## Overview
+
+The Plant Store API uses OpenAPI specification to define its endpoints, request/response schemas, and authentication methods. This allows for automatic API documentation generation and interactive testing through the API playground.
+
+## OpenAPI specification
+
+The Plant Store API is documented using OpenAPI 3.0 specification format. The specification file includes:
+
+- **Endpoints**: All available API routes for managing plants
+- **Schemas**: Data models for plant objects and responses
+- **Authentication**: Bearer token authentication configuration
+- **Parameters**: Query, path, and body parameters for each endpoint
+- **Responses**: Expected response codes and data structures
+
+<Card
+  title="View OpenAPI specification"
+  icon="file-code"
+  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+>
+  Access the complete OpenAPI specification file
+</Card>
+
+## Key features
+
+### Auto-generated documentation
+
+The API reference pages are automatically generated from the OpenAPI specification, ensuring documentation stays in sync with the actual API implementation.
+
+### Interactive playground
+
+Each endpoint includes an interactive playground where you can test API calls directly from the documentation with your own authentication credentials.
+
+### Type safety
+
+The OpenAPI specification provides clear type definitions for all request and response objects, making it easier to integrate with the API.
+
+## Using the specification
+
+You can use the OpenAPI specification file to:
+
+- Generate client libraries in various programming languages
+- Import into API testing tools like Postman or Insomnia
+- Validate API requests and responses
+- Set up automated testing
+
+## Authentication
+
+All endpoints in the Plant Store API require Bearer token authentication. Include your token in the Authorization header:
+
+```bash
+Authorization: Bearer YOUR_TOKEN_HERE
+```
+
+The authentication requirement is defined in the OpenAPI specification and automatically applied to all endpoints.
